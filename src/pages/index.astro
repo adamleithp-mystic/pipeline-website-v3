@@ -1,0 +1,25 @@
+---
+import BlogPostPreview from "../components/BlogPostPreview.astro";
+import Layout from "../layouts/Layout.astro";
+
+let allPosts = await Astro.glob("./posts/*.{md,mdx}");
+allPosts = allPosts.sort(
+  (a, b) =>
+    new Date(b.frontmatter.publishDate).valueOf() -
+    new Date(a.frontmatter.publishDate).valueOf()
+);
+---
+
+<Layout title="Pipeline.ai" description="this is a XXXXXX">
+  <main class="content">
+    <section class="intro">
+      <h1 class="latest">Pipeline.ai</h1>
+    </section>
+
+    <section aria-label="Blog post list">
+      <ul class="list">
+        {allPosts.map((p) => <BlogPostPreview post={p} />)}
+      </ul>
+    </section>
+  </main>
+</Layout>
