@@ -3,7 +3,7 @@ title: Using Pipeline.ai CLI
 publishDate: 22 February 2023
 author: Adam Leith
 authorURL: https://twitter.com/swithinbank
-description: ZZZZZ CMS to manage your Astro site’s content
+description: CMS to manage your Astro site’s content
 layout: ../../layouts/BlogPost.astro
 heroImage: /social.jpg
 ---

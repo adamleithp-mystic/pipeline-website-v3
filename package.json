@@ -10,7 +10,8 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^2.0.4"
+    "astro": "^2.0.4",
+    "mdx-scoped-runtime": "^0.8.0"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.17.0",
